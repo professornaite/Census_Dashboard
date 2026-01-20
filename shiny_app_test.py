@@ -36,7 +36,7 @@ RACE_LABELS = {
     'B02001_007E': 'Other Race',
     'B02001_008E': 'Two or More Races',
     'B02001_009E': 'Two Races (incl. Other)',
-    'B02001_010E': 'Two Races (excl. Other)'
+    'B02001_010E': 'Two Races (excl. Other)' 
 }
 
 def load_and_prepare_data(file_path):
@@ -55,7 +55,7 @@ def load_and_prepare_data(file_path):
 
 # Load the dataset
 try:
-    df = load_and_prepare_data("census_acs5_all_states_2009_2023.csv")
+    df = load_and_prepare_data("census_acs5_all_states_2009_2023.csv") # change the CSV file here (to the data that comes out of data_test.py)
 except Exception as e:
     print(f"Error: {e}")
     df = pd.DataFrame()
